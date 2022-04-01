@@ -1,0 +1,96 @@
+<html>
+<head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}
+nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:150px;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1> Insert To Watchlist </h1>
+</header>
+
+<nav>
+<a href="/Movies/search_flores.html">Search Watchlist</a> <br>
+</nav>
+
+<section>
+	<h1>Insert Movie</h1>
+	
+	<form action="InsertMovie" method="POST">
+	
+		Movie Name: <input type="text" name="name"> <br />
+		Watch Status: 
+		<select name = "status">
+		<option value = "Watched">Watched</option>
+		<option value = "Not Watched"> Not Watched</option>
+		</select>
+		Rating:
+		<select name = rating>
+		<option value = "0">0</option>
+		<option value = "1">1</option>
+		<option value = "2">2</option>
+		<option value = "3">3</option>
+		<option value = "4">4</option>
+		<option value = "5">5</option>
+		</select>
+		Comments: <input type="text" name="comment"> <br />
+		
+		<input type="submit" value="Submit" />
+	</form>
+
+</section>
+
+<footer>
+Copyright
+</footer>
+</body>
+</html>
